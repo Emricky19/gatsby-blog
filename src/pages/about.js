@@ -1,15 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
-import Footer from '../components/footer'
+import Layout from "../components/Layout"
 
 const AboutPage = () => {
   return (
-    <div style={{ color: `teal` }}>
+    <Layout>
       <h1>About Me</h1>
       <p>I am full time freelancer on Fiverr.</p>
-      <p><Link to='/contact'>Want to work with me? Reach out.</Link></p>
-      <Footer />
-    </div>
+      <p>
+        <Link to="/contact">Want to work with me? Reach out.</Link>
+      </p>
+    </Layout>
   )
 }
 export default AboutPage
