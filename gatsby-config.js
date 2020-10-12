@@ -10,15 +10,16 @@ module.exports = {
     title: `FUll-Stack Bootcamp`,
     author: 'Ademola Richard'
   },
-  plugins: [`gatsby-plugin-sass`,
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      name: `src`,
-      path: `${__dirname}/src/`,
-      ignore: [`**/\.*`], // ignore files starting with a dot
+  plugins: [
+    `gatsby-plugin-sass`,
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      }
     },
-  },
-  'gatsby-transformer-remark'
-],
+    'gatsby-transformer-remark' 
+  ]
 }
