@@ -8,14 +8,13 @@ const BlogPage = () => {
             query{
                 allMarkdownRemark {
                     edges {
-                    node {
-                        frontmatter {
-                        title
-                        date
+                        node {
+                            frontmatter {
+                                title
+                                date
+                            }
+                        
                         }
-                        html
-                        excerpt
-                    }
                     }
                 }
             }
